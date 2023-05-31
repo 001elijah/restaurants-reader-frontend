@@ -1,0 +1,13 @@
+.NavItem {
+    text-decoration: none;
+    color: #2c2c2c;
+
+    &.active {
+        color: #fa3470;
+    }
+
+    :hover:not(.active),
+    :focus-visible:not(.active) {
+        color: #fa3470;
+    }
+}
