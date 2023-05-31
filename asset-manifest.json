@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/restaurants-reader-frontend/static/css/main.33ce13b7.css",
-    "main.js": "/restaurants-reader-frontend/static/js/main.541cc093.js",
+    "main.js": "/restaurants-reader-frontend/static/js/main.af7ac454.js",
     "static/js/853.14779079.chunk.js": "/restaurants-reader-frontend/static/js/853.14779079.chunk.js",
     "static/css/667.5157d7b3.chunk.css": "/restaurants-reader-frontend/static/css/667.5157d7b3.chunk.css",
     "static/js/667.0105eded.chunk.js": "/restaurants-reader-frontend/static/js/667.0105eded.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/787.4595100f.chunk.js": "/restaurants-reader-frontend/static/js/787.4595100f.chunk.js",
     "index.html": "/restaurants-reader-frontend/index.html",
     "main.33ce13b7.css.map": "/restaurants-reader-frontend/static/css/main.33ce13b7.css.map",
-    "main.541cc093.js.map": "/restaurants-reader-frontend/static/js/main.541cc093.js.map",
+    "main.af7ac454.js.map": "/restaurants-reader-frontend/static/js/main.af7ac454.js.map",
     "853.14779079.chunk.js.map": "/restaurants-reader-frontend/static/js/853.14779079.chunk.js.map",
     "667.5157d7b3.chunk.css.map": "/restaurants-reader-frontend/static/css/667.5157d7b3.chunk.css.map",
     "667.0105eded.chunk.js.map": "/restaurants-reader-frontend/static/js/667.0105eded.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.33ce13b7.css",
-    "static/js/main.541cc093.js"
+    "static/js/main.af7ac454.js"
   ]
 }
