@@ -4,6 +4,7 @@ import css from './DishesList.module.css';
 const DishesList = ({ dishes, handleClick }) => {
     const placeholderImage = dishes.foodURL;
     const dishesList = dishes.menu;
+    const restaurant = dishes.restaurant;
     return (
         <>
             <ToastContainer />
@@ -15,7 +16,7 @@ const DishesList = ({ dishes, handleClick }) => {
                             <p>{dish.title}</p>
                             <div className={css.FlexWrapper}>
                                 <p>price: {dish.price}</p>
-                                <button className={css.Button} onClick={()=>handleClick(dish, `https://restaurants-reader-backend.onrender.com/${placeholderImage}`)}>add to Cart</button>
+                                <button className={css.Button} onClick={()=>handleClick(dish, `https://restaurants-reader-backend.onrender.com/${placeholderImage}`, restaurant)}>add to Cart</button>
                             </div>
                         </div>
                     </li>)}

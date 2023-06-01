@@ -11,6 +11,8 @@ const ShopsList = ({cart, handleRestaurantClick}) => {
             .then(results => setRestaurants(results))
             .catch(error => console.log(error));
     }, []);
+    // let disabled = false;
+    // console.log(cart)
     return (
         <>
             {restaurants.length === 0 && <span>Loading...</span>}

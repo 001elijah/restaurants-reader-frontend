@@ -21,13 +21,19 @@ export const App = () => {
   const [cart, setCart] = useState([]);
 
   const showToastMessage = (message) => {
-        toast.success(`${message}`, {
+        toast.success(message, {
             position: toast.POSITION.TOP_RIGHT
         });
-    };
+  };
   
-  const handleClick = (item, foodURL) => {
+  const showToastWarningMessage = (message) => {
+    toast.warning(message, {
+      position: toast.POSITION.TOP_LEFT
+    });
+  }
+  const handleClick = (item, foodURL, restaurant) => {
     item['photo'] = foodURL;
+    item['restaurant'] = restaurant;
     // Update cart item quantity if already in cart
     if (cart.some((cartItem) => cartItem._id === item._id)) {
       setCart((cart) =>
@@ -69,11 +75,22 @@ export const App = () => {
     );
   };
   const handleRestaurantClick = (e, id) => {
-    if (e.target.nodeName === 'A') {
-            searchRestaurantById(id)
-                .then(result => setDishes(result))
-                .catch(error => console.log(error));
-        }
+    // console.log(e.target.text);
+    if (cart.length === 0) {
+      if (e.target.nodeName === 'A') {
+        searchRestaurantById(id)
+          .then(result => setDishes(result))
+          .catch(error => console.log(error));
+      }
+    } else {
+      if (e.target.nodeName === 'A' && cart[0].restaurant === `${e.target.text}`) {
+        searchRestaurantById(id)
+          .then(result => setDishes(result))
+          .catch(error => console.log(error));
+      } else {
+        showToastWarningMessage('Select a dish from one restaurant per order!')
+      }
+    }
   };
   const handleSubmitOrder = (orderDeatails) => {
     postOrder(orderDeatails);
