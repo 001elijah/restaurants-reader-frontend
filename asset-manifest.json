@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/restaurants-reader-frontend/static/css/main.33ce13b7.css",
-    "main.js": "/restaurants-reader-frontend/static/js/main.fd6b3ea1.js",
+    "main.js": "/restaurants-reader-frontend/static/js/main.844ef435.js",
     "static/js/853.767c3c68.chunk.js": "/restaurants-reader-frontend/static/js/853.767c3c68.chunk.js",
     "static/css/667.5157d7b3.chunk.css": "/restaurants-reader-frontend/static/css/667.5157d7b3.chunk.css",
-    "static/js/667.0105eded.chunk.js": "/restaurants-reader-frontend/static/js/667.0105eded.chunk.js",
+    "static/js/667.de4f7e9b.chunk.js": "/restaurants-reader-frontend/static/js/667.de4f7e9b.chunk.js",
     "static/css/345.723c7d4b.chunk.css": "/restaurants-reader-frontend/static/css/345.723c7d4b.chunk.css",
     "static/js/345.9f0751a3.chunk.js": "/restaurants-reader-frontend/static/js/345.9f0751a3.chunk.js",
     "static/js/787.4595100f.chunk.js": "/restaurants-reader-frontend/static/js/787.4595100f.chunk.js",
     "index.html": "/restaurants-reader-frontend/index.html",
     "main.33ce13b7.css.map": "/restaurants-reader-frontend/static/css/main.33ce13b7.css.map",
-    "main.fd6b3ea1.js.map": "/restaurants-reader-frontend/static/js/main.fd6b3ea1.js.map",
+    "main.844ef435.js.map": "/restaurants-reader-frontend/static/js/main.844ef435.js.map",
     "853.767c3c68.chunk.js.map": "/restaurants-reader-frontend/static/js/853.767c3c68.chunk.js.map",
     "667.5157d7b3.chunk.css.map": "/restaurants-reader-frontend/static/css/667.5157d7b3.chunk.css.map",
-    "667.0105eded.chunk.js.map": "/restaurants-reader-frontend/static/js/667.0105eded.chunk.js.map",
+    "667.de4f7e9b.chunk.js.map": "/restaurants-reader-frontend/static/js/667.de4f7e9b.chunk.js.map",
     "345.723c7d4b.chunk.css.map": "/restaurants-reader-frontend/static/css/345.723c7d4b.chunk.css.map",
     "345.9f0751a3.chunk.js.map": "/restaurants-reader-frontend/static/js/345.9f0751a3.chunk.js.map",
     "787.4595100f.chunk.js.map": "/restaurants-reader-frontend/static/js/787.4595100f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33ce13b7.css",
-    "static/js/main.fd6b3ea1.js"
+    "static/js/main.844ef435.js"
   ]
 }
