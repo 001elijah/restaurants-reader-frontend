@@ -30,7 +30,12 @@ export const App = () => {
     toast.warning(message, {
       position: toast.POSITION.TOP_LEFT
     });
-  }
+  };
+  const showToastInfoMessage = (message) => {
+    toast.info(message, {
+    position: toast.POSITION.BOTTOM_CENTER
+});
+  };
   const handleClick = (item, foodURL, restaurant) => {
     item['photo'] = foodURL;
     item['restaurant'] = restaurant;
@@ -88,7 +93,8 @@ export const App = () => {
           .then(result => setDishes(result))
           .catch(error => console.log(error));
       } else {
-        showToastWarningMessage('Select a dish from one restaurant per order!')
+        showToastWarningMessage('Select a dish from one restaurant per order!');
+        showToastInfoMessage('Proceed within the restaurant or remove items from cart to acess others.');
       }
     }
   };
