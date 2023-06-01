@@ -87,8 +87,10 @@ export const App = () => {
             <Route index element={
               <>
                 <Wrapper>
-                  <Suspense fallback={<div>Loading...</div>}><ShopsList cart={cart} handleRestaurantClick={handleRestaurantClick} /></Suspense>
-                  <Suspense fallback={<div>Loading...</div>}><DishesList dishes={dishes} handleClick={handleClick} /></Suspense>
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <ShopsList cart={cart} handleRestaurantClick={handleRestaurantClick} />
+                    <DishesList dishes={dishes} handleClick={handleClick} />
+                  </Suspense>
                 </Wrapper>
               </>} />
           </Route>

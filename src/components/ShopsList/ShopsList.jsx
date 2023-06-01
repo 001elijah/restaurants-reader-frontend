@@ -13,9 +13,11 @@ const ShopsList = ({cart, handleRestaurantClick}) => {
     }, []);
     return (
         <>
-            <ul>
-                {restaurants.map(restaurant => <li key={restaurant._id}><Link onClick={(e) => handleRestaurantClick(e, restaurant._id)} key={restaurant._id} to={`/`} state={location}>{restaurant.restaurant}</Link></li>)}
-            </ul>
+            {restaurants.length === 0 && <span>Loading...</span>}
+            {restaurants.length > 0 &&
+                <ul>
+                    {restaurants.map(restaurant => <li key={restaurant._id}><Link onClick={(e) => handleRestaurantClick(e, restaurant._id)} key={restaurant._id} to={`/`} state={location}>{restaurant.restaurant}</Link></li>)}
+                </ul>}
         </>
     )
 }
